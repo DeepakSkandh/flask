@@ -1,0 +1,20 @@
+<h1>Hello {{ name }}</h1>
+
+<p>You are {{ age+10 }} years old.</p>
+
+<h1>{{user.roll}}</h1>
+<h1>{{user.role}}</h1>
+
+{% for project in projects %}
+
+    <div>
+        <h2>{{ project.name }}</h2>
+
+        <p>{{ project.description }}</p>
+
+        <a href="{{ project.github }}">
+            GitHub
+        </a>
+    </div>
+
+{% endfor %}
